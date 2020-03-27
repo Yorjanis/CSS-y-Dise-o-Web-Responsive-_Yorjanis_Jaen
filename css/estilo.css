@@ -1,0 +1,209 @@
+    body {
+        font-family: Dancing Script;
+        background-color: #02010a;
+    }
+	
+ /* ------------------------------------------------------------*/
+    
+    header {
+        background-color: #5b7989;
+        padding: 10px;
+        border-radius: 10px 10px 0px 0px;
+        Color: white;
+        text-shadow: 2px #02010a;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+		position: relative;
+        -webkit-animation: mymove 1s ; /* Safari 4.0 - 8.0 */
+        animation: mymove 1s ;
+		
+    }
+	
+	/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  0%   {margin-top:150%;}
+  60%  {margin-top:-5%;}
+  100%  {margin-top:0%;}
+ 
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  0% {margin-top:150%;}
+  60%  {margin-top:-5%;}
+  100%  {margin-top:0%;}
+}
+
+    
+	/* ------------------------------------------------------------*/
+	
+	    #contenedor {
+        max-width: 900px;
+        margin: auto;
+    }
+	
+	/* ------------------------------------------------------------*/
+	
+	    #titulo {
+        width: 75%;
+    }
+	
+	/* ------------------------------------------------------------*/
+	
+	    #menu {
+ width: 25%;
+ float: right;
+ display: inline-block;
+ padding:30px;
+    }
+	
+    .item {
+        Color: white;
+	
+    }
+    /* ------------------------------------------------------------*/
+    
+    #contenido1 {
+        display: flex;
+        flex-direction: column;
+        background-color: #669999;
+    }
+	
+	#contenido1>div {
+        margin: 8%;
+        text-align: center;
+        
+    }
+    
+    .miimagen {
+       
+        width: 100%;
+		height: auto;
+       
+    }
+    
+	/* ------------------------------------------------------------*/
+	
+	.responsive {
+        padding-top:20px;
+        float: left;
+        width: 50%;  /*Tamaño de la imagen*/
+        background-color: #d5c75f;
+        border: 1px;
+    }
+    
+    .responsive>div {
+        padding: 0px;
+        margin: auto;
+        height: 280px;
+        /* Hace mas pequeño el cuadro o div*/
+        width: 80%;
+        /* Coloca las imagenes ya sea a la izquierda o derecha dentro del cuadro o div, no afecta el tamaño de la imagen*/
+    }
+	
+	
+	    div.imagen1 img {
+        width: 100%;
+        height: auto;
+    }
+    
+    div.imagen2 img {
+        width: 100%;
+        height: auto;
+    }
+    
+    div.desc {
+        padding-top:8px;
+        text-align: center;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+	
+	/* ------------------------------------------------------------*/
+    
+    .imagen1 img {
+        transition-property: border;
+    }
+    
+    .imagen1 img:hover {
+        transform: rotate(10deg);
+        box-shadow: 2px 2px 2px #82c3a6;
+    }
+    
+    .imagen2 img {
+        transition-property: border;
+    }
+    
+    .imagen2 {
+        transition: 5px;
+    }
+    
+    .imagen2 img:hover {
+        position: relative;
+        left: 20px;
+        box-shadow: 2px 2px 2px #82c3a6;
+    }
+    /* ------------------------------------------------------------*/
+	
+	
+		
+	@media only screen and (max-width: 480px) {
+       
+
+      #contenedor {
+      max-width: 100%;
+      margin: auto;
+      }
+
+	   .responsive {
+            width: 100%;
+			margin: 0 auto;
+        }
+		
+		header{
+flex-direction: column;
+
+}
+
+#menu{
+width: 100%;
+text-align: center;
+}
+
+    #titulo {
+      text-align: center;
+    }
+		
+    }
+	
+		
+    
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+	
+	/*----------------------------------------------------------*/
+    
+    #contenido3 {
+        display: flex;
+        flex-direction: row;
+        /* Organiza en fila */
+		background-color: #C6d5c5;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    #contenido3>div {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        height: 220px;
+        /* Hace mas pequeño el cuadro o div*/
+        width: 85%;
+        /* Coloca las imagenes ya sea a la izquierda o derecha dentro del cuadro o div, no afecta el tamaño de la imagen*/
+    }
+    

@@ -1,0 +1,197 @@
+  body {
+        font-family: Dancing Script;
+        background-color: #02010a;
+    }
+    
+  header {
+        background-color: #5b7989;
+        padding: 10px;
+        border-radius: 10px 10px 0px 0px;
+        Color: white;
+        text-shadow: 2px #02010a;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+		position: relative;
+        -webkit-animation: mymove 1s ; /* Safari 4.0 - 8.0 */
+        animation: mymove 1s ;
+		
+    }
+	
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  0%   {margin-top:150%;}
+  60%  {margin-top:-5%;}
+  100%  {margin-top:0%;}
+ 
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  0% {margin-top:150%;}
+  60%  {margin-top:-5%;}
+  100%  {margin-top:0%;}
+}
+
+	    
+ .item {
+        Color: white;		
+   }
+    
+ #menu {
+ width: 25%;
+ float: right;
+ display: inline-block;
+ padding:30px;
+ }
+
+    #titulo {
+        width: 70%;
+    }
+        
+/*Estan son las propiedades que se aplican para resoluciones mayores de 900px*/
+    #contenedor {
+        max-width: 900px;
+        margin: auto;
+		}
+		
+		
+	#contenido{
+	text-align:center;
+background-color: #d5c75f;
+
+}
+		
+		
+/*Aqui aplicamos el display flex para que podamos modificar el comportamiento del contenedor
+luego definimos el comportamiento con flex-direction:row; para que se organicen sus elementos en fila*/
+
+#secundarias{
+width:100%;
+display:flex;
+flex-direction:row;
+
+}
+
+/*definimos el espacio de las imagenes en el contenedor para tamaño de escritorio que en este caso seria 33.3%*/
+
+.imagenes1{
+width:33.3%;
+
+
+}
+.imagenes2{
+width:33.3%;
+}
+.imagenes3{
+width:33.3%;
+}
+.imagenes4{
+width:33.3%;
+}
+.imagenes5{
+width:33.3%;
+}
+.imagenes6{
+width:33.3%;
+}
+
+img{
+width:90%;
+padding:5%;
+}
+
+.imagenes1{
+  -webkit-filter: blur(10px); /* Safari */
+  filter: blur(10px);
+}
+
+.imagenes3{
+  -webkit-filter: sepia(90%); /* Safari */
+  filter: sepia(90%);
+}
+
+.imagenes2, .imagenes4, .imagenes6{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*Estan son las propiedades que se aplican para resoluciones menores de 480px*/
+@media only screen and (max-width: 480px) { 
+
+
+#contenedor {
+max-width: 100%;
+margin: auto;
+}
+
+#contenido{
+width:100%;
+}
+
+/*aqui cambiamos el comportamiento de row a column para que cuando sea menos de 480px organice en columna y no en fila*/
+#secundarias{
+flex-direction:column;
+}
+
+/*aqui hacemos que las imagenes ahora para resoluciones menores no ocupen 33.3% cada una
+si no que ocupen 100% cada uno, de esta manera queda cada elemento ocupando el ancho total del dispostivo*/
+.imagenes1{
+width:100%;
+}
+.imagenes2{
+width:100%;
+}
+.imagenes3{
+width:100%;
+}
+.imagenes4{
+width:100%;
+}
+.imagenes5{
+width:100%;
+}
+
+.imagenes6{
+width:100%;
+}
+
+header{
+flex-direction: column;
+
+}
+
+#menu{
+width: 100%;
+text-align: center;
+}
+
+    #titulo {
+      text-align: center;
+    }
+
+
+}
+    #contenido2 {
+        display: flex;
+        flex-direction: row;
+        /* Organiza en fila */
+		background-color: #C6d5c5;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    #contenido2>div {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        height: 220px;
+        /* Hace mas pequeño el cuadro o div*/
+        width: 85%;
+        /* Coloca las imagenes ya sea a la izquierda o derecha dentro del cuadro o div, no afecta el tamaño de la imagen*/
+    }
+    
